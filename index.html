@@ -18,10 +18,24 @@
     <link rel="stylesheet" href="css/hero.css">
     <link rel="stylesheet" href="css/contact.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
 </head>
 
 <body>
+    <style>
+        .trophy-icon {
+    font-size: 4rem;
+    color: #ffcc00;
+    text-shadow: 0 0 20px rgba(255, 204, 0, 1);
+    animation: trophyBounce 1.5s infinite alternate;
+}
+
+@keyframes trophyBounce {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}
+    </style>
     <canvas id="starsCanvas"></canvas>
     <!-- Hero section   -->
     <section id="section-1" class="container-fluid d-flex flex-column justify-content-center align-items-center">
@@ -154,10 +168,10 @@
             <div class="prize-card">
                 <h3 class="section-title-prize">Grand Prize Pool</h3>
                 <div class="prize-amount-glow">
+                    <i class="fas fa-trophy trophy-icon"></i>
                     <span class="prize-amount">₹100,000</span>
                     <div class="glow"></div>
                 </div>
-                <!-- <p class="section-subtitle">Total winnings up for grabs</p> -->
             </div>
         </div>
     </section>
@@ -388,7 +402,7 @@
     <script src="gsap/HeroSection.js"></script>
     <script src="gsap/planet.js"></script>
     <script src="gsap/planet3.js"></script>
-    <!-- <script src="gsap/prize.js"></script> -->
+    <script src="gsap/prize.js"></script>
     <!-- <script src="gsap/fog.js"></script> -->
 </body>
 
