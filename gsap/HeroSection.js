@@ -114,7 +114,7 @@ document.addEventListener('DOMContentLoaded', function() {
             },
             scaleY: 0,
             transformOrigin: 'top center',
-            duration: 1,
+            duration: 0.5,
             ease: 'power2.out'
         });
     });
